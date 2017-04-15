@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Grub</string>
+    <string name="forgotpassword"><a href="www.google.com">Forgot your password?</a></string>
+
+</resources>
