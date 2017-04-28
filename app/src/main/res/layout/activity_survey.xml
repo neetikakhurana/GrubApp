@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_survey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lecture.nitika.grub.SurveyActivity"
+    android:background="@color/colorLogin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/surveyTitle">
+
+        <TextView
+            android:layout_width="600dp"
+            android:layout_height="50dp"
+            android:id="@+id/likedfood"
+            android:layout_marginTop="80dp"
+            android:text="What kinds of food do you like?"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:layout_width="600dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/likedfood_text"
+            android:layout_below="@+id/likedfood"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:layout_width="600dp"
+            android:layout_height="50dp"
+            android:id="@+id/dislikedfood"
+            android:layout_marginTop="300dp"
+            android:text="What kinds of food do you dislike?"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:layout_width="600dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/dislikedfood_text"
+            android:layout_below="@+id/dislikedfood"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:layout_width="600dp"
+            android:layout_height="50dp"
+            android:id="@+id/allergies"
+            android:layout_marginTop="520dp"
+            android:text="Any Allergies?"
+            android:textSize="30dp"
+            android:textColor="@android:color/white"/>
+<LinearLayout
+    android:layout_width="600dp"
+    android:layout_height="250dp"
+    android:layout_below="@+id/allergies"
+    android:id="@+id/allergies_list"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+
+            android:orientation="vertical">
+
+            <CheckBox
+                android:layout_width="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="30dp"
+                android:text="Nuts"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"/>
+            <CheckBox
+                android:layout_width="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="30dp"
+                android:text="Nuts"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"/>
+            <CheckBox
+                android:layout_width="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="30dp"
+                android:text="Nuts"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"/>
+            <CheckBox
+                android:layout_width="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="30dp"
+                android:text="Nuts"
+                android:textColor="@android:color/white"
+                android:textSize="30dp"/>
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+
+        android:orientation="vertical">
+
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="30dp"
+            android:text="Nuts"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"/>
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="30dp"
+            android:text="Nuts"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"/>
+        <CheckBox
+            android:layout_width="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="30dp"
+            android:text="Nuts"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"/>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:orientation="horizontal"
+            android:layout_height="60dp">
+        <CheckBox
+            android:layout_width="110dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="30dp"
+            android:text="Other"
+            android:id="@+id/list_other"
+            android:textColor="@android:color/white"
+            android:textSize="30dp"/>
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:labelFor="@+id/list_other"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_save"
+            android:text="Save"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:layout_below="@id/allergies_list"
+            android:background="@drawable/rounded_uploadbutton"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_later"
+            android:text="Later"
+            android:layout_marginLeft="400dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:layout_below="@id/allergies_list"
+            android:background="@drawable/rounded_uploadbutton"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/surveyTitle"
+        android:textColor="@android:color/white"
+        android:text="Tell me about Yourself!"
+        android:textSize="70dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

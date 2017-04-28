@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_upload"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lecture.nitika.grub.UploadActivity"
+    android:background="@color/colorBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_top"
+        android:layout_height="200dp">
+
+       <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorLogin"
+            android:id="@+id/imageView">
+           </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Upload Recipe"
+            android:textAlignment="center"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:id="@+id/upload"
+            android:layout_marginLeft="250dp"
+            android:textColor="#FFFFFF"
+            android:textSize="60dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layout_top">
+
+        <TextView
+            android:layout_width="90dp"
+            android:id="@+id/camera"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/rounded_upload"
+            android:layout_marginTop="37dp"
+            android:layout_height="90dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="127dp"
+            android:layout_marginTop="62dp"
+            android:id="@+id/floatingActionButton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:text="Title"
+            android:textSize="22dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="160dp"
+            android:textAppearance="@android:style/TextAppearance"
+            android:textAlignment="center"
+            android:textColor="@color/colorLogin"/>
+        <EditText
+            android:layout_width="600dp"
+            android:layout_height="60dp"
+            android:textSize="18dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_upload"
+            android:textAppearance="@android:style/TextAppearance"
+            android:id="@+id/title_text"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/title"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preparation Time"
+            android:textSize="22dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:textAppearance="@android:style/TextAppearance"
+            android:id="@+id/prepTime"
+            android:textColor="@color/colorLogin"
+            android:layout_below="@id/title_text"/>
+        <EditText
+            android:layout_width="600dp"
+            android:layout_height="60dp"
+            android:id="@+id/prepTime_text"
+            android:textSize="18dp"
+            android:layout_marginLeft="100dp"
+            android:textColor="@android:color/black"
+            android:background="@drawable/rounded_upload"
+            android:layout_marginTop="20dp"
+            android:hint="Enter the time needed to prepare it"
+            android:textAppearance="@android:style/TextAppearance"
+            android:layout_below="@id/prepTime"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List of Ingredients"
+            android:textSize="22dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:textAppearance="@android:style/TextAppearance"
+            android:id="@+id/ingList"
+            android:layout_below="@id/prepTime_text"
+            android:textColor="@color/colorLogin"/>
+        <EditText
+            android:layout_width="600dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/ingList"
+            android:textSize="18dp"
+            android:layout_marginLeft="100dp"
+            android:inputType="textMultiLine"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_upload"
+            android:textAppearance="@android:style/TextAppearance"
+            android:id="@+id/ingList_text"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List of Directions"
+            android:textSize="22dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="40dp"
+            android:textAppearance="@android:style/TextAppearance"
+            android:id="@+id/direct"
+            android:layout_below="@id/ingList_text"
+            android:textColor="@color/colorLogin"/>
+        <EditText
+            android:layout_width="600dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/direct"
+            android:textSize="18dp"
+            android:layout_marginLeft="100dp"
+            android:inputType="textMultiLine"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_upload"
+            android:textAppearance="@android:style/TextAppearance"
+            android:id="@+id/direct_text"/>
+
+        <TextView
+            android:text="Upload a recipe photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorLogin"
+            android:textSize="22dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="73dp"
+            android:id="@+id/upload_text" />
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_upload"
+            android:text="Upload"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:layout_below="@id/direct_text"
+            android:background="@drawable/rounded_uploadbutton"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:layout_weight="2"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/btn_gallery"
+                android:layout_height="match_parent"
+                android:text="Library"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:id="@+id/btn_camera"
+                android:text="Camera"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="helooooo"
+            android:id="@+id/txtView_recipeInfo_Description"
+            android:layout_height="0dp"
+            android:scrollbars="vertical"
+            android:textSize="@dimen/txt_ingredients_size"
+            android:layout_weight="8"/>
+    </LinearLayout>
+   <!-- <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="2"
+        android:layout_height="60dp"
+        android:layout_below="@+id/layout_top"
+        android:layout_marginTop="600dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/btn_Ingrediants"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:background="@color/colorLogin"
+            android:text="Library"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btn_Directions"
+            android:background="@color/colorLogin"
+            android:text="Camera"/>
+
+    </LinearLayout>-->
+</RelativeLayout>
