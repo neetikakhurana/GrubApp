@@ -2,6 +2,7 @@ package com.lecture.nitika.grub;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -97,6 +98,8 @@ public class SearchActivity extends AppCompatActivity
         MenuItem item=menu.findItem(R.id.menu_search);
 
         android.widget.SearchView searchView=(android.widget.SearchView)item.getActionView();
+        searchView.setMaxWidth(1000);
+        item.expandActionView();
         searchView.setOnQueryTextListener(new android.widget.SearchView.OnQueryTextListener(){
 
             @Override
@@ -204,7 +207,8 @@ public class SearchActivity extends AppCompatActivity
                 fragment = new HomeFragment();
                 break;
             case R.id.nav_location:
-
+                Intent loc=new Intent(this,LocationActivity.class);
+                startActivity(loc);
                 break;
             case R.id.nav_logout:
 

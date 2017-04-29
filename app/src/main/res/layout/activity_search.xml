@@ -21,6 +21,8 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_search"
+        android:background="@color/white"
+        app:theme="@style/ToolbarTheme"
         app:menu="@menu/activity_search_drawer" />
 
 </android.support.v4.widget.DrawerLayout>

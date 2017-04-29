@@ -5,19 +5,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.lecture.nitika.grub.SurveyActivity"
-    android:background="@color/colorLogin">
+    android:background="@drawable/survey_back">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginLeft="100dp"
-        android:layout_below="@+id/surveyTitle">
+        >
 
         <TextView
             android:layout_width="600dp"
             android:layout_height="50dp"
             android:id="@+id/likedfood"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="230dp"
             android:text="What kinds of food do you like?"
             android:textSize="30dp"
             android:textColor="@android:color/white"/>
@@ -34,7 +34,7 @@
             android:layout_width="600dp"
             android:layout_height="50dp"
             android:id="@+id/dislikedfood"
-            android:layout_marginTop="300dp"
+            android:layout_marginTop="450dp"
             android:text="What kinds of food do you dislike?"
             android:textSize="30dp"
             android:textColor="@android:color/white"/>
@@ -51,7 +51,7 @@
             android:layout_width="600dp"
             android:layout_height="50dp"
             android:id="@+id/allergies"
-            android:layout_marginTop="520dp"
+            android:layout_marginTop="670dp"
             android:text="Any Allergies?"
             android:textSize="30dp"
             android:textColor="@android:color/white"/>
@@ -173,7 +173,7 @@
 
     </RelativeLayout>
 
-    <TextView
+    <!--<TextView
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:id="@+id/surveyTitle"
@@ -183,5 +183,5 @@
         android:layout_marginLeft="100dp"
         android:layout_marginTop="44dp"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true" />-->
 </RelativeLayout>

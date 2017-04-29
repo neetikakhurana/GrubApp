@@ -142,7 +142,7 @@ public class RecipeInfo extends Fragment implements View.OnClickListener {
                             }
                             sb.append("</font>");
 
-                            sb.append("<font color=#000000>");
+                            sb.append("<font color=#808080>");
                             if(entry.containsKey(Constants.ingredients_name_key)){
                                 sb.append(entry.get(Constants.ingredients_name_key));
                             }
@@ -171,7 +171,7 @@ public class RecipeInfo extends Fragment implements View.OnClickListener {
                                         sb.append(stepentry.get(Constants.direction_number_key)+" : ");
                                     }
                                     sb.append("</font>");
-                                    sb.append("<font color=#000000>");
+                                    sb.append("<font color=#808080>");
                                     if(stepentry.containsKey(Constants.direction_innerStep_key)){
                                         sb.append(stepentry.get(Constants.direction_innerStep_key)+" ");
                                     }

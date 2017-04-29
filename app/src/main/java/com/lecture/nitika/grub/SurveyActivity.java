@@ -11,9 +11,9 @@ public class SurveyActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_survey);
-        TextView c=(TextView)findViewById(R.id.surveyTitle);
+        /*TextView c=(TextView)findViewById(R.id.surveyTitle);
         Typeface custom_font = Typeface.createFromAsset(getAssets(),  "fonts/Cookit-Regular.ttf");
 
-        c.setTypeface(custom_font);
+        c.setTypeface(custom_font);*/
     }
 }

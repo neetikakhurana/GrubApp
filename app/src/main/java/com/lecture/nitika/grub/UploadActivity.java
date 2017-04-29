@@ -15,7 +15,7 @@ public class UploadActivity extends AppCompatActivity {
         TextView c1 = (TextView)findViewById(R.id.title);
         TextView c2 = (TextView)findViewById(R.id.prepTime);
         TextView c3 = (TextView)findViewById(R.id.ingList);
-        TextView c4 = (TextView)findViewById(R.id.upload);
+       // TextView c4 = (TextView)findViewById(R.id.upload);
         TextView c5 = (TextView)findViewById(R.id.direct);
         TextView c6 = (TextView)findViewById(R.id.upload_text);
 
@@ -28,7 +28,7 @@ public class UploadActivity extends AppCompatActivity {
         c1.setTypeface(custom_font);
         c2.setTypeface(custom_font);
         c3.setTypeface(custom_font);
-        c4.setTypeface(custom_font);
+       // c4.setTypeface(custom_font);
         c5.setTypeface(custom_font);
         c6.setTypeface(custom_font);
 

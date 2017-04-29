@@ -6,20 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.lecture.nitika.grub.UploadActivity"
-    android:background="@color/colorBackground">
+    android:background="@drawable/upload_recipe">
     <RelativeLayout
         android:layout_width="match_parent"
         android:id="@+id/layout_top"
         android:layout_height="200dp">
 
-       <ImageView
+      <!-- <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@color/colorLogin"
+            android:layout_height="match_parent"
+            android:background="@drawable/upload_recipe"
             android:id="@+id/imageView">
-           </ImageView>
+           </ImageView>-->
 
-        <TextView
+       <!-- <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -30,7 +30,7 @@
             android:id="@+id/upload"
             android:layout_marginLeft="250dp"
             android:textColor="#FFFFFF"
-            android:textSize="60dp"/>
+            android:textSize="60dp"/>-->
 
     </RelativeLayout>
 

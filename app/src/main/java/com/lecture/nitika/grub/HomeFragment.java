@@ -1,13 +1,16 @@
 package com.lecture.nitika.grub;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTabHost;
+import android.support.v4.content.res.ResourcesCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 /**
@@ -65,6 +68,13 @@ public class HomeFragment extends Fragment{
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+
+
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
@@ -72,10 +82,25 @@ public class HomeFragment extends Fragment{
 
         mTabHost = (FragmentTabHost)rootView.findViewById(android.R.id.tabhost);
         mTabHost.setup(getActivity(),getChildFragmentManager(),android.R.id.tabcontent);
-
-        mTabHost.addTab(mTabHost.newTabSpec("tab1").setIndicator(Constants.recentlyViewed,getResources().getDrawable(R.drawable.ic_menu_send)),RViewedFragement.class,null);
+        mTabHost.addTab(mTabHost.newTabSpec("tab1").setIndicator(Constants.recentlyViewed, ResourcesCompat.getDrawable(getResources(), R.drawable.ic_menu_camera,null)),RViewedFragement.class,null);
         mTabHost.addTab(mTabHost.newTabSpec("tab2").setIndicator(Constants.favouriteRecipe,getResources().getDrawable(R.drawable.ic_menu_camera)),FavRecipeFragement.class,null);
         mTabHost.addTab(mTabHost.newTabSpec("tab3").setIndicator(Constants.featuredRecipe,getResources().getDrawable(R.drawable.ic_menu_gallery)),FeatureRecipeFragment.class,null);
+        mTabHost.setCurrentTab(1);
+        for (int i = 0; i < mTabHost.getTabWidget().getChildCount(); i++) {
+            View v = mTabHost.getTabWidget().getChildAt(i);
+            TextView tv = (TextView) mTabHost.getTabWidget().getChildAt(i).findViewById(android.R.id.title);
+            if (mTabHost.getCurrentTab()==i) {
+                v.setBackgroundColor(Color.WHITE);
+                tv.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0,R.drawable.ic_menu_gallery);
+                tv.setTextColor(Color.parseColor("#5BD43C"));
+
+            } else {
+                v.setBackgroundColor(Color.parseColor("#5BD43C"));
+                tv.setTextColor(Color.WHITE);
+            }
+
+
+        }
 
         return rootView;
     }

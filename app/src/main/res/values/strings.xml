@@ -23,5 +23,6 @@
 
     <string name="Ingrediants">Ingredients List</string>
     <string name="Directions">Directions</string>
+    <string name="title_activity_location">Map</string>
 
 </resources>
